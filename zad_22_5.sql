@@ -12,9 +12,6 @@ select count(*) as ilosc from books where BESTSELLER=true
 
 --------------
 
-use kodilla_course;
-
---------------
 
 use kodilla_course;
 
