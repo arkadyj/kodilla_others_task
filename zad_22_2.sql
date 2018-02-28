@@ -20,8 +20,7 @@ begin
             select datediff(current_date(), min(rent_date)) from rents
             where book_id = bk_id
             into days;
-            set bookspermonth = booksrent / (days/30);
-            update books set test = bookspermonth where BOOK_ID = bk_id;            
+            set bookspermonth = booksrent / (days/30);            
             if (bookspermonth >2) then            
 				update books set bestseller = true
 				where book_id = bk_id;
